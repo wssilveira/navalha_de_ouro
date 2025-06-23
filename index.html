@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Navalha de Ouro - Viamão/RS</title>
+    <meta name="description" content="A barbearia Navalha de Ouro em Viamão. Cortes de cabelo e barba com estilo. Agende seu horário pelo WhatsApp!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Oswald & Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (para ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212; /* Fundo escuro original */
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Oswald', sans-serif;
+        }
+        .hero-bg {
+            /* Nova imagem de fundo com base na solicitação do usuário */
+            background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 1)), url('https://i.ibb.co/nMdMWCTr/jovem-na-barbearia-aparando-cabelo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .text-gold {
+            color: #D4AF37; /* Tom de dourado */
+        }
+        .bg-gold {
+            background-color: #D4AF37;
+        }
+        .border-gold {
+            border-color: #D4AF37;
+        }
+        .hover\:bg-gold-dark:hover {
+            background-color: #c09e32;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- CABEÇALHO BRANCO COM LOGO MAIOR -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="#inicio" class="flex items-center">
+                <!-- Logo maior -->
+                <img src="https://i.ibb.co/G4J5D17r/Logo.png" alt="Logo Navalha de Ouro" class="h-20 md:h-24 w-auto">
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-gray-800 font-medium">
+                <a href="#servicos" class="hover:text-gold transition duration-300">Preços</a>
+                <a href="#galeria" class="hover:text-gold transition duration-300">Nossos Trabalhos</a>
+                <a href="#contato" class="hover:text-gold transition duration-300">Localização</a>
+            </nav>
+            <a href="https://wa.me/5551988885555?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="bg-gold text-black font-bold py-3 px-6 rounded-lg hover:bg-gold-dark transition duration-300 shadow-md">
+                Agendar
+            </a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO INICIAL -->
+    <main id="inicio">
+        <section class="hero-bg min-h-screen flex items-center justify-center text-center pt-28">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-8xl text-white font-display uppercase tracking-wider leading-tight">Estilo e Precisão</h1>
+                <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto text-gray-300">Onde cada detalhe conta. Transforme seu visual na Navalha de Ouro.</p>
+                <a href="https://wa.me/5551988885555?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="mt-8 inline-block bg-gold text-black font-bold py-4 px-10 rounded-lg text-xl hover:bg-gold-dark transition duration-300 transform hover:scale-105 shadow-xl">
+                    <i class="fab fa-whatsapp mr-2"></i>Agende seu Horário
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PREÇOS -->
+        <section id="servicos" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl text-center text-white font-display uppercase mb-12">Nossos Preços</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-gray-900 rounded-lg p-6 md:p-10 shadow-lg border-t-4 border-gold">
+                        <!-- Item: Barba -->
+                        <div class="flex justify-between items-center border-b border-gray-700 py-4">
+                            <h3 class="text-xl md:text-2xl text-white">Barba</h3>
+                            <p class="text-2xl md:text-3xl text-gold font-display font-bold">R$ 25,00</p>
+                        </div>
+                        <!-- Item: Cabelo -->
+                        <div class="flex justify-between items-center border-b border-gray-700 py-4">
+                            <h3 class="text-xl md:text-2xl text-white">Cabelo</h3>
+                            <p class="text-2xl md:text-3xl text-gold font-display font-bold">R$ 40,00</p>
+                        </div>
+                        <!-- Item: Barba + Cabelo -->
+                        <div class="flex justify-between items-center border-b border-gray-700 py-4">
+                            <h3 class="text-xl md:text-2xl text-white">Barba + Cabelo</h3>
+                            <p class="text-2xl md:text-3xl text-gold font-display font-bold">R$ 55,00</p>
+                        </div>
+                         <!-- Item: Faxina Facial -->
+                        <div class="flex justify-between items-center border-b border-gray-700 py-4">
+                            <h3 class="text-xl md:text-2xl text-white">Faxina Facial</h3>
+                            <p class="text-2xl md:text-3xl text-gold font-display font-bold">R$ 80,00</p>
+                        </div>
+                        <!-- Item: Combo de Rei -->
+                        <div class="flex justify-between items-center pt-4 bg-gray-800 -mx-6 -mb-6 md:-mx-10 md:-mb-10 mt-4 p-6 md:p-10 rounded-b-lg">
+                            <h3 class="text-xl md:text-2xl text-gold font-bold">Combo de Rei <span class="text-white text-base font-normal block">(Barba + Cabelo + Faxina Facial)</span></h3>
+                            <p class="text-2xl md:text-3xl text-gold font-display font-bold">R$ 100,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE GALERIA ATUALIZADA COM IMAGENS PERSONALIZADAS -->
+        <section id="galeria" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl text-center text-white font-display uppercase mb-12">Nossos Trabalhos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Item 1: Barba Modelada -->
+                    <div class="text-center">
+                        <div class="overflow-hidden rounded-lg shadow-lg border-2 border-gray-800 hover:border-gold transition-all duration-300">
+                            <img src="https://i.ibb.co/bM6D5jHf/barba-modelada.png" alt="[Imagem de uma Barba Modelada]" class="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500" >
+                        </div>
+                        <h3 class="mt-4 text-xl text-white font-display uppercase tracking-wider">Barba Modelada</h3>
+                    </div>
+                    <!-- Item 2: Corte Navalhado -->
+                     <div class="text-center">
+                        <div class="overflow-hidden rounded-lg shadow-lg border-2 border-gray-800 hover:border-gold transition-all duration-300">
+                            <img src="https://i.ibb.co/JWVNCw1p/corte-anavalhado.png" alt="[Imagem de um Corte Anavalhado]" class="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500" >
+                        </div>
+                        <h3 class="mt-4 text-xl text-white font-display uppercase tracking-wider">Corte Navalhado</h3>
+                    </div>
+                    <!-- Item 3: Barba Cheia -->
+                     <div class="text-center">
+                        <div class="overflow-hidden rounded-lg shadow-lg border-2 border-gray-800 hover:border-gold transition-all duration-300">
+                            <img src="https://i.ibb.co/mFXVZJc4/barba-cheia.png" alt="[Imagem de uma Barba Cheia]" class="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500" >
+                        </div>
+                        <h3 class="mt-4 text-xl text-white font-display uppercase tracking-wider">Barba Cheia</h3>
+                    </div>
+                    <!-- Item 4: Corte Moderno -->
+                     <div class="text-center">
+                        <div class="overflow-hidden rounded-lg shadow-lg border-2 border-gray-800 hover:border-gold transition-all duration-300">
+                            <img src="https://i.ibb.co/tMvJZjV6/corte-moderno.png" alt="[Imagem de um Corte Moderno]" class="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500" >
+                        </div>
+                        <h3 class="mt-4 text-xl text-white font-display uppercase tracking-wider">Corte Moderno</h3>
+                    </div>
+                    <!-- Item 5: Estilo Clássico -->
+                     <div class="text-center">
+                        <div class="overflow-hidden rounded-lg shadow-lg border-2 border-gray-800 hover:border-gold transition-all duration-300">
+                            <img src="https://i.ibb.co/whMkYdWH/estilo-classico.png" alt="[Imagem de um Estilo Clássico]" class="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500" >
+                        </div>
+                        <h3 class="mt-4 text-xl text-white font-display uppercase tracking-wider">Estilo Clássico</h3>
+                    </div>
+                    <!-- Item 6: Barba e Bigode -->
+                     <div class="text-center">
+                        <div class="overflow-hidden rounded-lg shadow-lg border-2 border-gray-800 hover:border-gold transition-all duration-300">
+                            <img src="https://i.ibb.co/4RfwDLsH/barba-e-bigode.png" alt="[Imagem de uma Barba e Bigode]" class="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500" >
+                        </div>
+                        <h3 class="mt-4 text-xl text-white font-display uppercase tracking-wider">Barba e Bigode</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO DE CONTATO E LOCALIZAÇÃO -->
+        <section id="contato" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl text-center text-white font-display uppercase mb-12">Onde nos Encontrar</h2>
+                <div class="flex flex-wrap -mx-4 items-stretch">
+                    <!-- Mapa -->
+                    <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                        <div class="rounded-lg overflow-hidden h-full shadow-lg border-2 border-gold">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.937845347209!2d-51.052375524424685!3d-30.06734793108665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519999a3e2e0d5b%3A0x7b3967f7e9a8a70c!2sR.%20Jos%C3%A9%20Pinto%20de%20Menezes%2C%20157%20-%20Tarum%C3%A3%2C%20Viam%C3%A3o%20-%20RS%2C%2094490-190!5e0!3m2!1spt-BR!2sbr!4v1719001460395!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                     <!-- Informações -->
+                    <div class="w-full lg:w-1/2 px-4">
+                        <div class="bg-gray-900 p-8 rounded-lg h-full shadow-lg flex flex-col justify-center">
+                            <h3 class="text-4xl text-white font-display uppercase mb-4">Contato</h3>
+                            <div class="mb-6">
+                                <h4 class="text-lg font-bold text-gold">Endereço:</h4>
+                                <p class="text-lg">Rua José Pinto de Menezes, 157<br>Tarumã, Viamão - RS</p>
+                            </div>
+                            <div class="mb-6">
+                                <h4 class="text-lg font-bold text-gold">Agendamentos:</h4>
+                                <p class="text-lg flex items-center gap-2"><i class="fab fa-whatsapp"></i> (51) 98888-5555</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gold">Horário de Funcionamento:</h4>
+                                <p class="text-lg">Segunda a Sábado: 09:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 Barbearia Navalha de Ouro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5551988885555?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Navalha%20de%20Ouro." target="_blank" class="whatsapp-float hover:scale-110 transition-transform duration-300" aria-label="Agendar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
